@@ -5,7 +5,33 @@ The bugs were found while testing core user flows such as authentication and sea
 
 ---
 
-## BUG-001 – Email Field Accepts Invalid or Misspelled Domains
+## BUG-001 – Name and Last Name Field: Validation Inconsistency
+
+**Section:** Sign Up / Sign In  
+**Severity:** Low  
+**Priority:** Low  
+
+### Steps to Reproduce
+1. Navigate to Home page.
+2. Click "Sign Up with email".
+3. In the "Your name" field, enter text containing numbers or special characters (e.g., John123, Doe@!).
+4. Complete the remaining fields.
+5. Click "Create account" button.
+
+### Expected Result
+The "Your name" field should accept only alphabetic characters (and optionally spaces or accented letters). If invalid characters are entered, the system should display a validation message such as: "Please enter a valid name (letters only)".
+
+Alternatively, if the field is meant to act as a username, the label could be adjusted to clarify its purpose, e.g., "Display name" or "Username".
+
+### Actual Result
+The form successfully creates an account even when the "Your name" field contains numbers or special characters.
+
+### Impact
+This may lead to user confusion regarding the intended use of the field and potential data quality issues if the system expects structured name data for personalization, communication, or reporting purposes.
+
+---
+
+## BUG-002 – Email Field Accepts Invalid or Misspelled Domains
 
 **Section:** Sign Up / Sign In  
 **Severity:** Medium  
@@ -28,7 +54,7 @@ This may lead to undelivered emails and poor data quality.
 
 ---
 
-## BUG-002 – Search Does Not Handle Misspelled Book Titles
+## BUG-003 – Search Does Not Handle Misspelled Book Titles
 
 **Section:** Search  
 **Severity:** Medium  
