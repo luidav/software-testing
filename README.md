@@ -4,7 +4,7 @@ Goodreads is a popular platform among book lovers worldwide. As a frequent user,
 
 ---
 
-`## Project Objective`
+## Project Objective
 
 To demonstrate my ability to apply manual testing in a real-world application, using a professional approach. This project includes test cases, exploratory testing, bug documentation, and technical insights.
 
@@ -52,12 +52,10 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 4. Click “Sign In”
 
 **Expected Result:** User is redirected to their homepage
-**Actual Result:** ✅ As expected
-**Status:** Passed
 
 
-**More test scenarios:**
-[View full test scenarios in Google Sheets](https://docs.google.com/spreadsheets/d/1W_JuKU7X42Rel6V1detaIfPSsZus5T1Y0k6cJTkmsPQ/edit?usp=sharing).
+Full list of test scenarios available here:
+[Google Sheets – Test Scenarios](https://docs.google.com/spreadsheets/d/1W_JuKU7X42Rel6V1detaIfPSsZus5T1Y0k6cJTkmsPQ/edit?usp=sharing).
 
 ---
 
@@ -81,12 +79,13 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 4. Press Enter or click the search icon.
 
 **Expected Result:** Search suggestions appear, including the full title (e.g., The Hobbit), or the results page shows relevant books matching the input.
-**Actual Result:** ✅ As expected.
-**Status:** Passed.
 
 
-**More test cases:**
-[View full test cases in Google Sheets](https://docs.google.com/spreadsheets/d/1nJAofkbqEoeYHENtsDXXdKLm6iz6WKpXrVGRfb1A2-k/edit?usp=sharing).
+A curated set of manual test cases focusing on the search functionality is documented in this repository:
+[Manual Test Cases – Goodreads](manual-testing/goodreads/test-cases.md)
+
+The complete test suite is maintained in Google Sheets:
+[Google Sheets – Full Test Cases](https://docs.google.com/spreadsheets/d/1nJAofkbqEoeYHENtsDXXdKLm6iz6WKpXrVGRfb1A2-k/edit?usp=sharing).
 
 ---
 
@@ -100,12 +99,9 @@ Full defect documentation is available in the defect reports section.
 **Section:** Sign Up / Sign In  
 **Severity:** Medium  
 **Summary:** The system accepts email addresses with invalid or misspelled domains (e.g., `abc@gmal.com`) without displaying any warning.  
-**Expected Result:**  
-  The sign-up process should prevent submission and display a validation message informing the user that the email may be invalid.  
-**Actual Result:**  
-  Account creation proceeds successfully even when the domain contains obvious typos.  
-**Impact:**  
-  May lead to undelivered confirmation or notification emails and reduce data quality.
+**Expected Result:** The sign-up process should prevent submission and display a validation message informing the user that the email may be invalid.  
+**Actual Result:** Account creation proceeds successfully even when the domain contains obvious typos.  
+**Impact:** May lead to undelivered confirmation or notification emails and reduce data quality.
 
 ---
 
@@ -121,17 +117,14 @@ Full defect documentation is available in the defect reports section.
   1. Enter a misspelled title such as “Hary Poter”.  
   2. Press Enter or click the search icon.
      
-**Expected Result:**  
-  The system should propose suggestions such as “Did you mean: *Harry Potter*?” or return fuzzy-matched relevant items.  
+**Expected Result:** The system should propose suggestions such as “Did you mean: *Harry Potter*?” or return fuzzy-matched relevant items.  
 
-**Actual Result:**  
-  No suggestions or relevant results are returned.  
+**Actual Result:** No suggestions or relevant results are returned.  
   
-**Impact:**
-Degrades search usability and content discoverability.
+**Impact:** Degrades search usability and content discoverability.
+
   
-**Full defect log:**
-[View complete defect report](https://docs.google.com/spreadsheets/d/1Eiseva5nc-eWWw8Aesd8KT1BzJ4TVaVsRAlC0BxeM4g/edit?usp=sharing).
+**Full defect report:**
+[Goodreads Defect Reports](defect-reports/goodreads_defects.md)
 
 ---
-
