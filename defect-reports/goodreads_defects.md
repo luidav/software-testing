@@ -48,3 +48,6 @@ No suggestions or relevant results are displayed.
 ### Impact
 This negatively affects search usability and content discoverability.
 
+
+**Full defect log:**
+[View complete defect report](https://docs.google.com/spreadsheets/d/1Eiseva5nc-eWWw8Aesd8KT1BzJ4TVaVsRAlC0BxeM4g/edit?usp=sharing).
