@@ -34,9 +34,9 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 
 ---
 
-## Test Scenarios
+## Sample Test Scenario
 
-### Test Escenario 1: User Login – Valid Credentials
+### User Login – Valid Credentials
 **Feature:** Login
 
 **Scenario:** User logs in using a valid email and password
@@ -51,40 +51,19 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 
 4. Click “Sign In”
 
-- **Expected Result:** User is redirected to their homepage
-- **Actual Result:** ✅ As expected
-- **Status:** Passed
+**Expected Result:** User is redirected to their homepage
+**Actual Result:** ✅ As expected
+**Status:** Passed
 
 
-### Test Escenario 2: Search for a Book – Valid Input 
-**Feature:** Book Search
-
-**Scenario:** Search using a valid book title
-
-**Steps:**
-
-1. Go to the Goodreads homepage
-
-2. Locate the search bar
-
-3. Type the title “Atomic Habits”
-
-4. Press Enter or click the search icon
-
-- **Expected Result:** A list of books matching “Atomic Habits” appears
-- **Actual Result:** ✅ As expected
-- **Status:** Passed
-
-
-In the next link you can find more basic test scenarios for Goodreads:
-
-[ https://docs.google.com/spreadsheets/d/1W_JuKU7X42Rel6V1detaIfPSsZus5T1Y0k6cJTkmsPQ/edit?usp=sharing ].
+**More test scenarios:**
+[View full test scenarios in Google Sheets](https://docs.google.com/spreadsheets/d/1W_JuKU7X42Rel6V1detaIfPSsZus5T1Y0k6cJTkmsPQ/edit?usp=sharing).
 
 ---
 
-## Test Cases
+## Sample Test Case
 
-### Test Case 1: Search a book by partial title
+### Search a book by partial title
 **Priority:** Medium
 
 **Feature:** Book search
@@ -101,65 +80,58 @@ In the next link you can find more basic test scenarios for Goodreads:
 
 4. Press Enter or click the search icon.
 
--**Expected Result:** Search suggestions appear, including the full title (e.g., The Hobbit), or the results page shows relevant books matching the input.
-- **Actual Result:** ✅ As expected.
-- **Status:** Passed.
+**Expected Result:** Search suggestions appear, including the full title (e.g., The Hobbit), or the results page shows relevant books matching the input.
+**Actual Result:** ✅ As expected.
+**Status:** Passed.
 
 
-### Test Case 2: Search a book by author name
-**Feature:** Book Search
-
-**Scenario:** User searches for books by entering an author's name
-
-**Steps:**
-
-1. Navigate to the Goodreads homepage.
-
-2. Locate the search bar.
-
-3. Type the author’s name (e.g., “J.K. Rowling”).
-
-4. Press Enter or click the search icon.
-
-**Expected Result:** The results page displays books written by the author, ranked by popularity or relevance.
-
-**Priority:** High
-
-In the next link you can find more test cases for Goodreads:
-
-[ https://docs.google.com/spreadsheets/d/1nJAofkbqEoeYHENtsDXXdKLm6iz6WKpXrVGRfb1A2-k/edit?usp=sharing ].
+**More test cases:**
+[View full test cases in Google Sheets](https://docs.google.com/spreadsheets/d/1nJAofkbqEoeYHENtsDXXdKLm6iz6WKpXrVGRfb1A2-k/edit?usp=sharing).
 
 ---
 
-## Bugs Found
+## Defect Report Samples
+
+Below are examples of defects identified during testing.  
+Full defect documentation is available in the defect reports section.
 
 ### Bug 1: Email Field Accepts Invalid or Misspelled Domains
 
 **Section:** Sign Up / Sign In  
-- **Severity:** Medium  
-- **Summary:** The system accepts email addresses with invalid or misspelled domains (e.g., `abc@gmal.com`) without displaying any warning.  
-- **Expected Result:**  
+**Severity:** Medium  
+**Summary:** The system accepts email addresses with invalid or misspelled domains (e.g., `abc@gmal.com`) without displaying any warning.  
+**Expected Result:**  
   The sign-up process should prevent submission and display a validation message informing the user that the email may be invalid.  
-- **Actual Result:**  
+**Actual Result:**  
   Account creation proceeds successfully even when the domain contains obvious typos.  
-- **Impact:**  
+**Impact:**  
   May lead to undelivered confirmation or notification emails and reduce data quality.
 
 ---
 
 ### Bug 2: Search Fails to Handle Misspelled Book Titles
-- **Section:** Search Functionality  
-- **Severity:** Medium  
-- **Summary:** The search bar does not recognize or correct common misspellings of book titles.  
-- **Steps to Reproduce:**  
+
+**Section:** Search Functionality  
+
+**Severity:** Medium  
+
+**Summary:** The search bar does not recognize or correct common misspellings of book titles.  
+
+**Steps to Reproduce:**  
   1. Enter a misspelled title such as “Hary Poter”.  
-  2. Press Enter or click the search icon.  
-- **Expected Result:**  
+  2. Press Enter or click the search icon.
+     
+**Expected Result:**  
   The system should propose suggestions such as “Did you mean: *Harry Potter*?” or return fuzzy-matched relevant items.  
-- **Actual Result:**  
+
+**Actual Result:**  
   No suggestions or relevant results are returned.  
-- **Impact:**  
-  Leads to poor search experience and makes relevant content harder to discover.
-[https://docs.google.com/spreadsheets/d/1Eiseva5nc-eWWw8Aesd8KT1BzJ4TVaVsRAlC0BxeM4g/edit?usp=sharing]
+  
+**Impact:**
+Degrades search usability and content discoverability.
+  
+**Full defect log:**
+[View complete defect report](https://docs.google.com/spreadsheets/d/1Eiseva5nc-eWWw8Aesd8KT1BzJ4TVaVsRAlC0BxeM4g/edit?usp=sharing).
+
 ---
 
