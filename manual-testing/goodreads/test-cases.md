@@ -57,3 +57,6 @@ The system returns relevant results matching the partial input (e.g., "The Hobbi
 ### Expected Result
 Books written by the specified author are displayed in the results page.
 
+
+**More test cases:**
+[View full test cases in Google Sheets](https://docs.google.com/spreadsheets/d/1nJAofkbqEoeYHENtsDXXdKLm6iz6WKpXrVGRfb1A2-k/edit?usp=sharing).
