@@ -37,11 +37,11 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 ## Test Scenarios
 
 ### Test Escenario 1: User Login – Valid Credentials
--Feature: Login
+**Feature:** Login
 
--Scenario: User logs in using a valid email and password
+**Scenario:** User logs in using a valid email and password
 
--Steps:
+**Steps:**
 
 1. Navigate to Goodreads homepage
 
@@ -57,11 +57,11 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 
 
 ### Test Escenario 2: Search for a Book – Valid Input 
--Feature: Book Search
+**Feature:** Book Search
 
--Scenario: Search using a valid book title
+**Scenario:** Search using a valid book title
 
--Steps:
+**Steps:**
 
 1. Go to the Goodreads homepage
 
@@ -85,13 +85,13 @@ In the next link you can find more basic test scenarios for Goodreads:
 ## Test Cases
 
 ### Test Case 1: Search a book by partial title
--Priority: Medium
+**Priority:** Medium
 
--Feature: Book search
+**Feature:** Book search
 
--Scenario: User searches for a book using only part of the title
+**Scenario:** User searches for a book using only part of the title
 
--Steps:
+**Steps:**
 
 1. Navigate to the Goodreads homepage.
 
@@ -107,11 +107,11 @@ In the next link you can find more basic test scenarios for Goodreads:
 
 
 ### Test Case 2: Search a book by author name
--Feature: Book Search
+**Feature:** Book Search
 
--Scenario: User searches for books by entering an author's name
+**Scenario:** User searches for books by entering an author's name
 
--Steps:
+**Steps:**
 
 1. Navigate to the Goodreads homepage.
 
