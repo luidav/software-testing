@@ -4,7 +4,7 @@ Goodreads is a popular platform among book lovers worldwide. As a frequent user,
 
 ---
 
-## Project Objective
+`## Project Objective`
 
 To demonstrate my ability to apply manual testing in a real-world application, using a professional approach. This project includes test cases, exploratory testing, bug documentation, and technical insights.
 
@@ -34,7 +34,7 @@ To demonstrate my ability to apply manual testing in a real-world application, u
 
 ---
 
-## Test Escenarios
+## Test Scenarios
 
 ### Test Escenario 1: User Login – Valid Credentials
 -Feature: Login
